@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation Appointment</title>
+<link rel="icon" href="i.jpg">
+<link rel="stylesheet" href="appt.css">
+</head>
+<body>
+<div class="appointment-container">
+  <h2>Book a Blood Donation Appointment</h2>
+  <form id="appointment-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Appointment Date</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <!-- New Dropdown for Blood Group -->
+    <div class="form-group">
+      <label for="blood-group">Blood Group</label>
+      <select id="blood-group" name="blood-group" required>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+    </div>
+    <!-- End of Blood Group Dropdown -->
+    <div class="form-group">
+      <button type="submit">Submit Appointment</button>
+    </div>
+  </form>
+</div>
+<script src="appt.js"></script>
+</body>
+</html>

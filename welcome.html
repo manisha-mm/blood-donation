@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="icon" href="i.jpg">
+  <link rel="stylesheet" href="wy.css">
+</head>
+<body>
+  <div class="outer-box">
+    <div class="centered-box">
+      <h1>LOGIN SUCCESSFUL!!!</h1>
+      <div id="user-info">
+        <!-- The submitted information will be displayed here -->
+      </div>
+      <p>Welcome to our Blood Donation Campaign! We're thrilled that you've chosen to be a part of this life-saving initiative. Your decision to donate blood is a remarkable act of kindness that can bring hope and relief to those in need. With every drop of blood you contribute, you're making a direct impact on the well-being of others. Together, we're building a community of compassion and support, where every donor is a hero. Thank you for your generosity and for joining us in this noble cause.</p>
+      <button id="redirectButton">Go to HOME</button>
+      <script>
+        // Retrieve the submitted information from the URL query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("username");
+
+        // Display the submitted information on the page
+        const userInfoDiv = document.getElementById("user-info");
+        userInfoDiv.innerHTML = `
+          <p> Dear ${username},</p>
+        `;
+
+        // Add an event listener to the button for redirection
+        const redirectButton = document.getElementById("redirectButton");
+        redirectButton.addEventListener("click", () => {
+          window.location.href = "bd.html";
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</html>

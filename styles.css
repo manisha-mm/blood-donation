@@ -1,0 +1,93 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+.importance-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .importance-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .benefits-section {
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .benefits-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .benefit img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .benefit p {
+    font-size: 16px;
+  }
+  
+
+
+
+
+
+
